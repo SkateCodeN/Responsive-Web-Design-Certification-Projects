@@ -1,0 +1,128 @@
+Here is the live webpage:
+https://codepen.io/skatecoden/pen/rgXjKe
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements. -->
+<div id="main">
+  <html>
+    <title>Tribute to umm...</title>
+    <!-- User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").-->
+    <div id="title"> <h1> This is a title</h1> </div>
+    <!--User Story #3: I should see a div element with a corresponding id="img-div". -->
+    <div id="img-div"> 
+    <!--User Story #4: Within the img-div element, I should see an img element with a corresponding id="image". -->
+      <div id="image"><img src="http://www.chicagonow.com/adventures-mom-entrepreneur/files/2017/11/BoxOfStuff.jpg" alt="Pic of stuf"> </div>
+      <!--User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div. -->
+      <div id="img-caption"> <p> This is a picture of stuff</p></div>
+      
+      
+    </div> <!-- end of div img-div -->
+      <!--User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page. -->
+    <div id="tribute-info"> 
+      <h2 class="center"> I guess this is a tribute page to stuff</h2>
+      <p class="center"> Yes this page has stuff and things,  <br> as well as
+        things and stuff.</p>
+      
+      <h3 class="left">Why?</h3>
+      <p class="left"> Well stuff and things are everywhere. So why not?</p>
+      
+      <h3>Who?</h3>
+      <p> Again this is about stuff and it can be things.<br>
+        Just like things can be categorized as stuff</p>
+      <h3 class="left">When?</h3>
+      <p class="left"> Well to be honest stuff and things have been around <br>
+        for a while, but I am lazy and well don't really care <br>
+        tp research anything. </p>
+      <h3>Where?</h3>
+      <p> You name it, country wise, or place and <br>
+        stuff has been there. So have things </p>
+      <h3 class="left">What?</h3>
+      <p class="left">Pesky are you? Well of stuff that can sometimes be <br>
+        things but things that are always stuff.</p>
+      
+      
+    </div>
+    
+    <!--User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank"). -->
+    
+    
+      <a id="tribute-link" href="https://dictionary.cambridge.org/us/dictionary/english/stuff"                          target="_blank"> 
+        <button type="button"> 
+          <span>A Cambridge definition of stuff</span>
+         </button>
+         </a>
+    <button type="button"> a button</button>
+    
+       <a id="tribute-link" href="https://en.oxforddictionaries.com/definition/thing" target="_blank"> Oxford dictionary of things 
+          </a>
+    
+  </html>
+</div>
+
+#######################################################################################################################################
+
+[CSS]
+#main{
+  background-color:  #C6C4C5;
+  display: grid;
+  width: 100%;
+  grid-template-rows:  7% auto 60% auto;
+  grid-row-gap: 20px;
+}
+#title{
+  background-color:#4BFFA5;
+    border: solid #4BFFA5;
+    border-width: 1px;
+
+
+}
+h1 {
+  color:red;
+}
+/* User Story #9: The img element should be centered within its parent element. */
+#img-div{
+  text-align: center;
+}
+/* User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size. */
+
+#image {
+  max-width: 100%;
+    display: block;
+    height: auto;
+    
+}
+#main #title {
+  text-align: center;
+}
+
+#tribute-info{
+  text-align: right;
+  color: #040F3D;
+  background-color: blue;
+    
+
+}
+
+#tribute-info .center{
+  text-align: center;
+  background-color: red;
+}
+
+#tribute-info .left{
+  text-align: left;
+}
+
+p, h3{
+  color:white;
+  font-family: "Tahoma";
+  border-style: hidden;
+  position: relative;
+  border-width: 0px 0px 0px 20px;
+}
+
+a{
+  text-align: center;
+}
+
+
+
